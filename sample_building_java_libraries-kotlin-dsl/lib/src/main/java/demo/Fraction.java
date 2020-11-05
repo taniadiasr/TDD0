@@ -11,9 +11,33 @@ public class Fraction {
         this.denominador = denominador;
     }
 
-    public int someFunction() {
-        System.out.println(this.numerador/this.denominador);
-        return (int) (this.numerador/this.denominador);
+    public boolean someFunction(Object obj) {
+        String errorMessage = "Mistyped detected: ";
+        try {
+            if (obj.getClass().getName().contains("Fraction") ){
+                Fraction local = (Fraction) obj;
+                if (local.getDenominador() != 0){
+                    return true;
+                }
+                else {
+                    errorMessage += "zero in the denominador of the Fraction";
+                }
+            }
+            else {
+                if (obj.getClass().getTypeName().contains("Integer")) {
+                    return true;
+                }
+                else {
+                    errorMessage += obj.getClass().getName();
+                }
+            }
+            // If we got here, is not a valid type so let's print that out :)
+            System.out.println(errorMessage);
+        }
+        catch (Exception e){
+            System.out.println("Something went wrong! Error: %s" + e.toString());
+        }
+        return false;
     }
     public int getNumerador() {
         return numerador;
