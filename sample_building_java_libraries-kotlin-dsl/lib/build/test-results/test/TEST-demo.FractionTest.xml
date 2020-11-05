@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="demo.FractionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-11-04T10:34:54" hostname="DESKTOP-41VOQ6N" time="0.043">
+<testsuite name="demo.FractionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-11-05T00:54:34" hostname="DESKTOP-41VOQ6N" time="0.06">
   <properties/>
-  <testcase name="testSomeFunction" classname="demo.FractionTest" time="0.003"/>
-  <testcase name="testZeroOnDenominadorNotAllowed" classname="demo.FractionTest" time="0.005"/>
-  <testcase name="testDoubleNotAllowed" classname="demo.FractionTest" time="0.031"/>
+  <testcase name="testSomeFunction" classname="demo.FractionTest" time="0.005"/>
+  <testcase name="testZeroOnDenominadorNotAllowed" classname="demo.FractionTest" time="0.004"/>
+  <testcase name="testDoubleNotAllowed" classname="demo.FractionTest" time="0.05"/>
   <testcase name="testInteger" classname="demo.FractionTest" time="0.001"/>
   <system-out><![CDATA[Mistyped detected: zero in the denominador of the Fraction
 Mistyped detected: java.lang.Double

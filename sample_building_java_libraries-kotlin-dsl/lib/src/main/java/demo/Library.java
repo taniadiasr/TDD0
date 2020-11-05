@@ -5,6 +5,7 @@ package demo;
 
 public class Library {
     public boolean someLibraryMethod() {
+        //throw new RuntimeException();
         return true;
     }
 }
